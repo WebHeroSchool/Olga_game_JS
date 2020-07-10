@@ -8,20 +8,26 @@
   margin: auto;
 }
 
-.menu { 
-  margin: 130px 100px 0;
-}
+.menu { margin: 130px 100px 0; }
 
 .title {
-  color: #FFF;
+  color: #fff;
   margin-bottom: 10px;
-  font: normal bold 57px/67px "Roboto";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
 }
 
 .subtitle {
-  color: #FFF;
+  color: #fff;
   margin: 0 0 60px 0;
-  font: normal bold 19px/22px "Roboto";
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
 }
 
 .menu__select-level {
@@ -35,52 +41,61 @@
   position: relative;
   background: none;
   border: none;
-  color: #FFF;
-  font: normal bold 50px/59px "Roboto";
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
   outline: none;
   padding-left: 48px;
 }
 
-.level_btn:hover {
-  opacity: 0.8;
+.level_btn::hover {
+  opacity: .8;
   cursor: pointer;
   position: relative;
 }
 
-.level_active:before {
+.level_active::before {
   content: '';
-  background-color: #D62B2E;
+  background-color: #d62b2e;
   position: absolute;
   top: 20px;
   left: 0;
   width: 20px;
   height: 20px;
-  transform: rotate(45deg);;
+  transform: rotate(45deg);
 }
 
 .start-button {
-  background: #D62B2E;
+  background: #d62b2e;
   border: none;
   border-radius: 7px;
-  color: #FFF;
-  font: normal bold 32px/37px "Roboto";
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
   margin: 0;
   height: 95px;
   width: 352px;
-  outline: none;
-  
+  outline: none; 
 }
 
-.start-button:hover {
+.start-button::hover {
   cursor: pointer;
   opacity: .9;
 }
 
-button:active, button:focus {
-    outline: none !important;
+button::active,
+button::focus {
+  outline: none !important;
 }
+
 button::-moz-focus-inner {
-    border: 0 !important;
+  border: 0 !important;
 }
 
 .pictures {
@@ -106,21 +121,20 @@ button::-moz-focus-inner {
   transform: rotate(39.26deg);
 }
 
-/*Стили, которые добавляются через скрипт*/
-
+/* Стили, которые добавляются через скрипт */
 
 .card-wrap {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
   cursor: pointer;
   height: 340px;
   width: 220px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform .8s;
 }
 
-.card-wrap__hover:hover {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+.card-wrap__hover::hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, .5);
   transform: rotate(-3.08deg) translateY(-15px);
   transition: .5s ease;
 }
@@ -143,23 +157,23 @@ button::-moz-focus-inner {
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  position:absolute;
+  position: absolute;
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
 }
 
 .card__winner {
-  background: url(../img/bug_card.png) no-repeat; 
+  background: url(../img/bug_card.png) no-repeat;
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  position:absolute;
+  position: absolute;
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
 }
 
 
-.three-card{
+.three-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,315 +208,317 @@ button::-moz-focus-inner {
 
 @media (min-width: 1025px) and (max-width: 1224px) {
 
-.menu { 
-  margin: 50px 70px;
-}
+  .menu { margin: 50px 70px; }
 
-.title {
-  font: normal bold 50px/60px "Roboto";
-}
+  .menu__select-level { margin-bottom: 100px; }
 
-.menu__select-level {
-  margin-bottom: 100px;
-}
+  .level_btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.level_btn {
-  font: normal bold 40px/50px "Roboto";
-}
+  .start-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+    height: 90px;
+    width: 345px;
+  }
 
-.start-button {
-  font: normal bold 28px/32px "Roboto";
-  margin: 0;
-  height: 90px;
-  width: 345px;
-}
+  .pictures {
+    top: 30%;
+    right: 8%;
+  }
 
-.pictures {
-  top: 30%;
-  right: 8%;
- }
+  .ten-card .card-wrap,
+  .ten-card .card__back,
+  .ten-card .card__game-over,
+  .ten-card .card__winner {
+    background-size: 175px 270px;
+    height: 270px;
+    width: 175px;
+  }
 
-.ten-card .card-wrap,
-.ten-card .card__back,
-.ten-card .card__game-over,
-.ten-card .card__winner {
-  background-size: 175px 270px;
-  height: 270px;
-  width: 175px;
-}
-
-.ten-card {
-  height: 570px;
-  width: 935px;
-}
+  .ten-card {
+    height: 570px;
+    width: 935px;
+  }
 
 }
 
 @media (min-width: 987px) and (max-width: 1024px) {
 
-.container {  
-  min-height: 700px;
-}
+  .container { min-height: 700px; }
 
-.menu { 
-  margin: auto 50px;
-}
+  .menu { margin: auto 50px; }
 
-.title {
-  margin: 0 0 8px 0;
-  font: normal bold 50px/60px "Roboto";
-}
+  .title { margin: 0 0 8px 0; }
 
-.menu__select-level {
-  margin-bottom: 70px;
-}
+  .menu__select-level { margin-bottom: 70px; }
 
-.level_btn {
-  margin: 0 0 5px 0;
-  font: normal bold 40px/50px "Roboto";
-}
+  .level_btn {
+    margin: 0 0 5px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.start-button {
-  font: normal bold 28px/32px "Roboto";
-  margin: 0 0 20px 0;
-  height: 90px;
-  width: 345px;
-}
+  .start-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+    height: 90px;
+    width: 345px;
+  }
 
-.pictures {
-  display: none;
- }
+  .pictures { display: none; }
 
-.card-wrap,
-.card__back,
-.card__game-over,
-.card__winner {
-  background-size: 175px 270px;
-  height: 270px;
-  width: 175px;
-}
+  .card-wrap,
+  .card__back,
+  .card__game-over,
+  .card__winner {
+    background-size: 175px 270px;
+    height: 270px;
+    width: 175px;
+  }
 
-.three-card {
-  height: 270px;
-  width: 575px;
-}
+  .three-card {
+    height: 270px;
+    width: 575px;
+  }
 
-.six-card {
-  height: 580px;
-  width: 575px;
-}
+  .six-card {
+    height: 580px;
+    width: 575px;
+  }
 
-.ten-card {
-  height: 570px;
-  width: 935px;
-}
+  .ten-card {
+    height: 570px;
+    width: 935px;
+  }
 
 }
 
 @media (min-width: 769px) and (max-width: 986px) {
 
-.container {  
-  min-height: 700px;
-}
+  .container { min-height: 700px; }
 
-.menu { 
-  margin: auto 50px;
-}
+  .menu { margin: auto 50px; }
 
-.title {
-  margin: 0 0 8px 0;
-  font: normal bold 50px/60px "Roboto";
-}
+  .title { margin: 0 0 8px 0; }
 
-.subtitle {
-  margin: 0 0 40px 0;
-}
+  .subtitle { margin: 0 0 40px 0; }
 
-.menu__select-level {
-  margin-bottom: 70px;
-}
+  .menu__select-level { margin-bottom: 70px; }
 
-.level_btn {
-  margin: 0 0 5px 0;
-  font: normal bold 30px/40px "Roboto";
-}
+  .level_btn {
+    margin: 0 0 5px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-.level_active:before {
-  width: 15px;
-  height: 15px;
-}
+  .level_active::before {
+    width: 15px;
+    height: 15px;
+  }  
 
-.start-button {
-  font: normal bold 28px/32px "Roboto";
-  margin: 0 0 20px 0;
-  height: 90px;
-  width: 345px;
-}
+  .start-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+    height: 90px;
+    width: 345px;
+  }
 
-.pictures {
-  display: none;
- }
+  .pictures { display: none; }
+ 
+  .card-wrap,
+  .card__back,
+  .card__game-over,
+  .card__winner {
+    background-size: 175px 270px;
+    height: 270px;
+    width: 175px;
+  }
 
-.card-wrap,
-.card__back,
-.card__game-over,
-.card__winner {
-  background-size: 175px 270px;
-  height: 270px;
-  width: 175px;
-}
+  .three-card {
+    height: 270px;
+    width: 575px;
+  }
 
-.three-card {
-  height: 270px;
-  width: 575px;
-}
+  .six-card {
+    height: 580px;
+    width: 575px;
+  }
 
-.six-card {
-  height: 580px;
-  width: 575px;
-}
-.ten-card .card-wrap,
-.ten-card .card__back,
-.ten-card .card__game-over,
-.ten-card .card__winner {
-  background-size: 120px 170px;
-  height: 170px;
-  width: 120px;
-}
+  .ten-card .card-wrap,
+  .ten-card .card__back,
+  .ten-card .card__game-over,
+  .ten-card .card__winner {
+    background-size: 120px 170px;
+    height: 170px;
+    width: 120px;
+  }
 
-.ten-card {
-  height: 360px;
-  width: 640px;
-}
+  .ten-card {
+    height: 360px;
+    width: 640px;
+  }
 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-.container {  
-  min-height: 700px;
-}
 
-.menu { 
-  margin: auto 50px;
-}
+  .container { min-height: 700px; }
 
-.title {
-  margin: 0 0 8px 0;
-  font: normal bold 40px/50px "Roboto";
-}
+  .menu { margin: auto 50px; }
 
-.menu__select-level {
-  margin-bottom: 50px;
-}
+  .title {
+    margin: 0 0 8px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.level_btn {
-  margin: 0 0 5px 0;
-  font: normal bold 40px/50px "Roboto";
-}
+  .menu__select-level { margin-bottom: 50px; }
 
-.start-button {
-  margin: 0 0 20px 0;
-  height: 80px;
-  width: 290px;
-  font: normal bold 25px/30px "Roboto";
-}
+  .level_btn {
+    margin: 0 0 5px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.pictures {
-  display: none;
- }
+  .start-button {
+    margin: 0 0 20px 0;
+    height: 80px;
+    width: 290px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
 
-.card-wrap,
-.card__back,
-.card__game-over,
-.card__winner {
-  background-size: 145px 230px;
-  height: 230px;
-  width: 145px;
-}
+  .pictures { display: none; }
 
-.three-card {
-  height: 230px;
-  width: 455px;
-}
+  .card-wrap,
+  .card__back,
+  .card__game-over,
+  .card__winner {
+    background-size: 145px 230px;
+    height: 230px;
+    width: 145px;
+  }
 
-.six-card {
-  height: 470px;
-  width: 455px;
-}
+  .three-card {
+    height: 230px;
+    width: 455px;
+  }
 
-.ten-card .card-wrap,
-.ten-card .card__back,
-.ten-card .card__game-over,
-.ten-card .card__winner {
-  background-size: 85px 140px;
-  height: 140px;
-  width: 85px;
-}
+  .six-card {
+    height: 470px;
+    width: 455px;
+  }
 
-.ten-card {
-  height: 290px;
-  width: 465px;
-}
+  .ten-card .card-wrap,
+  .ten-card .card__back,
+  .ten-card .card__game-over,
+  .ten-card .card__winner {
+    background-size: 85px 140px;
+    height: 140px;
+    width: 85px;
+  }
+
+  .ten-card {
+    height: 290px;
+    width: 465px;
+  }
 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-.container {  
-  min-height: 600px;
-}
+  .container { min-height: 600px; }
 
-.menu { 
-  margin: auto 50px;
-}
+  .menu { margin: auto 50px; }
 
-.title {
-  margin: 0 0 8px 0;
-  font: normal bold 40px/50px "Roboto";
-}
+  .title {
+    margin: 0 0 8px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.menu__select-level {
-  margin-bottom: 50px;
-}
+  .menu__select-level { margin-bottom: 50px; }
 
-.level_btn {
-  margin: 0 0 5px 0;
-  font: normal bold 40px/50px "Roboto";
-}
+  .level_btn {
+    margin: 0 0 5px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.start-button {
-  margin: 0 0 20px 0;
-  height: 80px;
-  width: 250px;
-  font: normal bold 25px/30px "Roboto";
-}
+  .start-button {
+    margin: 0 0 20px 0;
+    height: 80px;
+    width: 250px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.pictures {
-  display: none;
- }
+  .pictures { display: none; }
 
-.card-wrap,
-.card__back,
-.card__game-over,
-.card__winner {
-  background-size: 85px 140px;
-  height: 140px;
-  width: 85px;
-}
+  .card-wrap,
+  .card__back,
+  .card__game-over,
+  .card__winner {
+    background-size: 85px 140px;
+    height: 140px;
+    width: 85px;
+  }
 
-.three-card {
-  height: 140px;
-  width: 275px;
-}
+  .three-card {
+    height: 140px;
+    width: 275px;
+  }
 
-.six-card {
-  height: 290px;
-  width: 275px;
-}
+  .six-card {
+    height: 290px;
+    width: 275px;
+  }
 
-.ten-card {
-  height: 575px;
-  width: 275px;
-}
+  .ten-card {
+    height: 575px;
+    width: 275px;
+  }
 
 }

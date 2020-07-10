@@ -13,16 +13,16 @@ let cardCount;
 
 
 const activeLavel = () => {
-  selectLevel.forEach((item) => {
-    item.classList.remove('level_active')
-  })
+  selectLevel.forEach(item => {
+    item.classList.remove('level_active');
+  });
     event.target.classList.add('level_active');
-}
-  selectLevel.forEach((item) => {
+};
+  selectLevel.forEach(item => {
       item.addEventListener('click', activeLavel)
   });
 
-function getLevel() {
+const getLevel = () => {
   if (simple.classList.contains('level_active')) {
     cardsField.classList.add('three-card');
     return cardCount = 3;
@@ -35,11 +35,11 @@ function getLevel() {
     cardsField.classList.add('ten-card');
     return cardCount = 10;
   }
-};
+}
 
-function playGame() {
+const playGame = () => {
 getLevel();
-const createCards = (number) => {
+const createCards = number => {
 let randomCard = Math.floor(Math.random() * number);
   for (let i = 0; i < number; i++) {
     const cardWrap = document.createElement('div');
@@ -69,13 +69,15 @@ let randomCard = Math.floor(Math.random() * number);
 };
  
   createCards(cardCount);
- 
+  
   document.querySelectorAll('.card-wrap').forEach(cardWrap => {
     cardWrap.addEventListener('click', () => {
       if (cardWasClicked) {
         cardsField.style.display = 'none';
+        cardsField.classList.remove('three-card','six-card','ten-card');
         startMenu.style.display = '';
         cardWasClicked = false;
+
       } else {
         cardWrap.classList.add('card__click');
         cardWrap.classList.remove('card-wrap__hover');
@@ -85,8 +87,8 @@ let randomCard = Math.floor(Math.random() * number);
   });
 };
 
-function startGame() {
-  cardsField.innerHTML  = "";
+const startGame = () => {
+  cardsField.innerHTML  = '';
   cardsField.style.display = 'flex';
   startMenu.style.display = 'none';
   playGame();
