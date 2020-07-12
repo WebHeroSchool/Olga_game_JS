@@ -4,15 +4,15 @@
   display: flex;
   max-width: 1440px;
   min-width: 320px;
-  min-height: 1062px;
+  height: 100vh;
   margin: auto;
 }
 
-.menu { margin: 130px 100px 0; }
+.menu { margin: 0 0 0 100px; }
 
 .title {
   color: #fff;
-  margin-bottom: 10px;
+  margin: 50px 0 20px 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -30,14 +30,11 @@
   line-height: 22px;
 }
 
-.menu__select-level {
-  margin-bottom: 113px;
-  position: relative;
-}
+.menu__select-level { position: relative; }
 
 .level_btn {
   display: flex;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   position: relative;
   background: none;
   border: none;
@@ -48,7 +45,7 @@
   font-size: 50px;
   line-height: 59px;
   outline: none;
-  padding-left: 48px;
+  padding-left: 40px;
 }
 
 .level_btn::hover {
@@ -71,16 +68,15 @@
 .start-button {
   background: #d62b2e;
   border: none;
-  border-radius: 7px;
+  border-radius: 10px;
   color: #fff;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 37px;
-  margin: 0;
-  height: 95px;
-  width: 352px;
+  font-size: 40px;
+  line-height: 50px;
+  height: 90px;
+  width: 350px;
   outline: none; 
 }
 
@@ -100,7 +96,7 @@ button::-moz-focus-inner {
 
 .pictures {
   position: absolute;
-  top: 50%;
+  bottom: 8%;
   right: 8%;
 }
 
@@ -208,32 +204,11 @@ button::-moz-focus-inner {
 
 @media (min-width: 1025px) and (max-width: 1224px) {
 
-  .menu { margin: 50px 70px; }
-
-  .menu__select-level { margin-bottom: 100px; }
+  .menu { margin: 0 0 0 70px; }
 
   .level_btn {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
     font-size: 40px;
     line-height: 50px;
-  }
-
-  .start-button {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    margin: 0;
-    height: 90px;
-    width: 345px;
-  }
-
-  .pictures {
-    top: 30%;
-    right: 8%;
   }
 
   .ten-card .card-wrap,
@@ -253,20 +228,10 @@ button::-moz-focus-inner {
 }
 
 @media (min-width: 987px) and (max-width: 1024px) {
-
-  .container { min-height: 700px; }
-
-  .menu { margin: auto 50px; }
-
-  .title { margin: 0 0 8px 0; }
-
-  .menu__select-level { margin-bottom: 70px; }
+  
+  .menu { margin: 0 0 0 70px; }
 
   .level_btn {
-    margin: 0 0 5px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
     font-size: 40px;
     line-height: 50px;
   }
@@ -275,11 +240,10 @@ button::-moz-focus-inner {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    margin: 0 0 20px 0;
-    height: 90px;
-    width: 345px;
+    font-size: 30px;
+    line-height: 40px;
+    height: 70px;
+    width: 290px;
   }
 
   .pictures { display: none; }
@@ -312,39 +276,27 @@ button::-moz-focus-inner {
 
 @media (min-width: 769px) and (max-width: 986px) {
 
-  .container { min-height: 700px; }
-
-  .menu { margin: auto 50px; }
-
-  .title { margin: 0 0 8px 0; }
-
-  .subtitle { margin: 0 0 40px 0; }
+  .menu { margin: 0 0 0 70px; }
 
   .menu__select-level { margin-bottom: 70px; }
 
   .level_btn {
-    margin: 0 0 5px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    margin: 0 0 10px 0;
     font-size: 30px;
     line-height: 40px;
   }
 
   .level_active::before {
+    top: 15px;
     width: 15px;
     height: 15px;
   }  
 
   .start-button {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    margin: 0 0 20px 0;
-    height: 90px;
-    width: 345px;
+    font-size: 30px;
+    line-height: 40px;
+    height: 70px;
+    width: 250px;
   }
 
   .pictures { display: none; }
@@ -386,15 +338,9 @@ button::-moz-focus-inner {
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-  .container { min-height: 700px; }
-
-  .menu { margin: auto 50px; }
+  .menu { margin: 0 0 0 50px; }
 
   .title {
-    margin: 0 0 8px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
     font-size: 40px;
     line-height: 50px;
   }
@@ -402,23 +348,22 @@ button::-moz-focus-inner {
   .menu__select-level { margin-bottom: 50px; }
 
   .level_btn {
-    margin: 0 0 5px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    line-height: 40px;
   }
 
+  .level_active::before {
+    top: 15px;
+    width: 15px;
+    height: 15px;
+  }  
+
   .start-button {
-    margin: 0 0 20px 0;
-    height: 80px;
-    width: 290px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    height: 70px;
+    width: 250px;
   }
 
   .pictures { display: none; }
@@ -460,39 +405,35 @@ button::-moz-focus-inner {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .container { min-height: 600px; }
-
-  .menu { margin: auto 50px; }
+  .menu { margin: 0 0 0 30px; }
 
   .title {
-    margin: 0 0 8px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
+    margin: 30px 0 15px 0;
   }
 
-  .menu__select-level { margin-bottom: 50px; }
+  .subtitle { margin-bottom: 30px; }
+
+  .menu__select-level { margin-bottom: 40px; }
 
   .level_btn {
     margin: 0 0 5px 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 35px;
   }
 
+  .level_active::before {
+    top: 12px;
+    width: 12px;
+    height: 12px;
+  }  
+
   .start-button {
-    margin: 0 0 20px 0;
-    height: 80px;
-    width: 250px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 35px;
+    height: 60px;
+    width: 230px;
   }
 
   .pictures { display: none; }
@@ -501,13 +442,13 @@ button::-moz-focus-inner {
   .card__back,
   .card__game-over,
   .card__winner {
-    background-size: 85px 140px;
-    height: 140px;
+    background-size: 85px 135px;
+    height: 135px;
     width: 85px;
   }
 
   .three-card {
-    height: 140px;
+    height: 135px;
     width: 275px;
   }
 
@@ -517,7 +458,7 @@ button::-moz-focus-inner {
   }
 
   .ten-card {
-    height: 575px;
+    height: 555px;
     width: 275px;
   }
 
