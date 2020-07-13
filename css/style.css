@@ -85,15 +85,6 @@
   opacity: .9;
 }
 
-button:active,
-button:focus {
-  outline: none !important;
-}
-
-button::-moz-focus-inner {
-  border: 0 !important;
-}
-
 .pictures {
   position: absolute;
   bottom: 8%;
@@ -135,9 +126,7 @@ button::-moz-focus-inner {
   transition: .5s ease;
 }
 
-.card__click {
-  transform: rotateY(180deg);
-}
+.card__click { transform: rotateY(180deg); }
 
 .card__back {
   background: url(../img/card.png) no-repeat;
@@ -294,7 +283,7 @@ button::-moz-focus-inner {
   }
 
   .pictures { display: none; }
- 
+
   .card-wrap,
   .card__back,
   .card__game-over,

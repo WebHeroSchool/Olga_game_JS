@@ -65,7 +65,7 @@ let randomCard = Math.floor(Math.random() * number);
       gameOverCard.className = 'card__game-over';
       cardWrap.append(gameOverCard);
     }
-  };
+  }
 };
  
   createCards(cardCount);
@@ -92,7 +92,7 @@ const startGame = () => {
   cardsField.style.display = 'flex';
   startMenu.style.display = 'none';
   playGame();
-}
+};
 
 
 startButton.addEventListener('click', startGame);
