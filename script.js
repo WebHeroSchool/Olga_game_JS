@@ -19,7 +19,7 @@ const activeLavel = () => {
     event.target.classList.add('level_active');
 };
   selectLevel.forEach(item => {
-      item.addEventListener('click', activeLavel)
+      item.addEventListener('click', activeLavel);
   });
 
 const getLevel = () => {
@@ -35,7 +35,7 @@ const getLevel = () => {
     cardsField.classList.add('ten-card');
     return cardCount = 10;
   }
-}
+};
 
 const playGame = () => {
 getLevel();
@@ -64,7 +64,7 @@ let randomCard = Math.floor(Math.random() * number);
       cardWrap.append(cardBack);
       gameOverCard.className = 'card__game-over';
       cardWrap.append(gameOverCard);
-    };
+    }
   };
 };
  
