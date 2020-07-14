@@ -1,5 +1,5 @@
 .container {
-  background: url(../img/Background.png) no-repeat;
+  background: url(../img/Background.png);
   background-size: cover;
   display: flex;
   max-width: 1440px;
@@ -8,7 +8,7 @@
   margin: auto;
 }
 
-.menu { margin: 0 0 0 100px; }
+.menu { margin: 0 25px 0 100px; }
 
 .title {
   color: #fff;
@@ -181,7 +181,7 @@
 
 .ten-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   height: 750px;
@@ -192,7 +192,7 @@
 
 @media (min-width: 1025px) and (max-width: 1224px) {
 
-  .menu { margin: 0 0 0 70px; }
+  .menu { margin: 0 25px 0 70px; }
 
   .level_btn {
     font-size: 40px;
@@ -216,7 +216,7 @@
 
 @media (min-width: 987px) and (max-width: 1024px) {
 
-  .menu { margin: 0 0 0 70px; }
+  .menu { margin: 0 25px 0 70px; }
 
   .level_btn {
     font-size: 40px;
@@ -320,7 +320,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-  .menu { margin: 0 0 0 50px; }
+  .menu { margin: 0 25px 0 50px; }
 
   .title {
     font-size: 40px;
@@ -384,9 +384,9 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
 
-  .menu { margin: 0 0 0 30px; }
+  .menu { margin: 0 15px 0 30px; }
 
   .title {
     font-size: 35px;
